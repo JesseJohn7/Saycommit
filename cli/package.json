@@ -1,0 +1,11 @@
+{
+  "name": "saycommit",
+  "version": "1.0.0",
+  "description": "Say commit. AI writes the commit message from your changes.",
+  "bin": { "saycommit": "bin/saycommit.js" },
+  "files": ["bin", "README.md"],
+  "engines": { "node": ">=18" },
+  "keywords": ["git", "commit", "ai", "cli", "conventional-commits"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/YOUR_USERNAME/saycommit.git" }
+}
