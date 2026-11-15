@@ -57,10 +57,10 @@ async function setup() {
 function pickProvider() {
   const cfg = loadConfig();
   const env = process.env;
+  if (cfg.key) return cfg;
   if (env.GROQ_API_KEY) return { provider: "groq", key: env.GROQ_API_KEY };
   if (env.GEMINI_API_KEY || env.GOOGLE_API_KEY) return { provider: "gemini", key: env.GEMINI_API_KEY || env.GOOGLE_API_KEY };
   if (env.ANTHROPIC_API_KEY) return { provider: "anthropic", key: env.ANTHROPIC_API_KEY };
-  if (cfg.key) return cfg;
   die("No API key found. Run: npx saycommit setup\nFree key (no card): https://console.groq.com/keys");
 }
 
