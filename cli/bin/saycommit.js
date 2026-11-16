@@ -10,7 +10,7 @@ const MAX_DIFF = 30000;
 
 // Later, when your backend is deployed, put its URL here (example: "https://your-app.vercel.app/api/commit").
 // Leave empty until then.
-const HOSTED_URL = process.env.SAYCOMMIT_API_URL || "";
+const HOSTED_URL = process.env.SAYCOMMIT_API_URL || "https://saycommit-backend.vercel.app/api/commit";
 
 const SYSTEM =
   "You write git commit messages in Conventional Commits format (feat, fix, refactor, docs, test, chore, style, perf). " +
