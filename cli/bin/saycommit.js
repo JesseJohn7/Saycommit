@@ -189,7 +189,7 @@ async function generate(diff, stat) {
   }
   git("commit", "-m", msg);
   console.log("Committed.");
-  if (has("-p")) console.log(git("push"));
+    if (has("-p")) { git("push"); console.log("Pushed."); }
 })().catch((e) => {
   if (e instanceof Fatal) return;
   console.error("Error: " + (e.cause && e.cause.message ? e.cause.message : e.message) + "\nCheck your internet connection and API key.");
