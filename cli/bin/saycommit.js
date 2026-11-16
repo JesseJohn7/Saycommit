@@ -17,6 +17,7 @@ const SYSTEM =
   "Subject line max 72 chars, imperative mood, no trailing period. For non-trivial changes add a blank line and short bullet points explaining what and why. " +
   "Output ONLY the commit message, no code fences, no preamble.";
 
+  
 const GROQ_PREFERRED = [
   "openai/gpt-oss-20b",
   "openai/gpt-oss-120b",
